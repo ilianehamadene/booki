@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+
+a {
+    all:unset;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  display: block;
+  margin: 0 15px 0 15px ; 
+}
+
+.bloc_page {
+    width: auto;
+    max-width: 1100px;
+    margin: auto;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+
+
+/* ---HEADER--- */
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo_principal {
+    height: 45px;
+}
+
+.nav {
+    cursor : pointer;
+    display: flex;
+}
+
+.nav_top_bar {
+    display: block;
+    padding : 40px;
+    border-top: 3px solid transparent;
+
+}
+
+.nav_top_bar:hover {
+    border-top: 3px solid #0065fc;
+    color: #0065fc;
+}
+
+
+
+
+/* -------------RECHERCHE------------ */
+
+
+
+
+h1 {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.button:hover {
+    background-color: #f2f2f2;
+}
+
+#Barre_recherche {
+  display: flex;
+  border: 1px solid #f2f2f2;
+  border-radius: 15px;
+  width: 440px;
+  height: 50px;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#location_dot {
+    background-color: #f2f2f2;
+    display: flex;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+input {
+  all: unset;
+  width: calc(100% - 112px);
+  padding-left: 16px;
+  height: 100%;
+  font-weight: 600;
+  font-size: 18px;  
+}
+
+.rechercheiphone {
+    display: none;
+}
+
+.recherche {
+  all: unset;
+  display: flex;
+  background-color: #0065fc;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+}
+
+.recherche:hover {
+    cursor:pointer;
+    background : #deebff;
+}
+
+
+
+
+/* ----------FILTRES---------- */
+
+
+
+
+
+#filtres {
+    display: flex;   
+    align-items: center;
+}
+
+.filtre {
+    display: flex;
+}
+
+.navfiltre {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 600;    
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  border: 2px solid #f2f2f2;
+  border-left: transparent;
+  border-radius: 30px;
+  height: 50px;
+  margin-right: 20px;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.textefiltre {
+    padding-left: 20px;
+    padding-right:20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.logofiltre {
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #deebff;
+    color: #0065fc;
+    height: 50px;
+    width: 50px; 
+}
+
+#nblogement {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.infologement {
+    display: flex;
+    align-items: center;
+}
+
+.infologo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #f2f2f2;
+    color: #0065fc;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+
+
+
+/* ---Hebergement & Populaire--- */
+
+
+
+
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#photos_chambre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#articlehebergement {
+  background-color:#f2f2f2;
+  border-radius: 15px;
+  padding: 10px;
+  margin-right: 15px;
+  width: auto;
+  flex: 1 58%;
+}
+
+.vignette{
+    border: 5px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 200px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;  
+    background-color: white; 
+    margin-bottom: 20px;
+}
+
+h2{
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.vignette:hover {
+    background: #deebff;
+    border-color: #deebff;
+}
+
+.vignette2:hover {
+    background: #deebff;
+    border-color: #deebff;
+}
+
+h3 {
+    font-size: 13px ;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.taillephoto{
+    margin-bottom: 5px;
+    object-fit: cover;
+    height:10vw;
+    min-height: 70px;
+    max-height: 140px;
+    width: 100%;
+}
+
+.prix {
+    font-size: 13px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.stars {
+    display: flex;
+    padding-left: 10px;
+    padding-top: 8px;
+}
+
+.bluestar {
+    color: #0065fc;
+    font-size: 12px;
+}
+
+.greystar {
+    color: #f2f2f2;
+    font-size: 12px;
+}
+
+#afficherplus {
+    margin-left: 30px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+#les_pop {
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    background-color:#f2f2f2;
+}
+
+.vignette2 {
+    border: 5px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 270px;
+    height: 120px;
+    display: flex;  
+    background-color: white; 
+    margin: 0 18px 25px 18px;
+}
+
+.lespopulaires {
+    display: flex;
+    flex-direction: column;
+}
+
+.taillephoto2 {
+    object-fit: cover;
+    width: 112px ; 
+    height: 100%;
+}
+
+.nom {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.prixaside {
+    margin-top: 5px;
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+.stars2 {
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+#blackstar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.blackstar {
+    font-size: 24px;
+}
+
+
+
+
+/* ---ACTIVITES A MARSEILLE--- */
+
+
+
+
+#Activite {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 50px;
+}
+
+.double{
+    display: flex;
+    flex-direction: column;
+}
+
+.simple:hover {
+    background: #deebff;
+}
+
+.photoactivite{
+    margin-bottom: 5px;
+    object-fit: cover;
+    height: 300px;
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 20px ; 
+}
+
+.photoactivite2{
+    margin-bottom: 5px;
+    object-fit: cover;
+    height: 125px ;
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 20px ;   
+}
+
+.simple{
+    border-radius: 20px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;  
+    margin-top: 20px;
+    box-shadow: 5px 10px 5px  #f2f2f2;
+    padding-bottom: 10px;
+}
+
+
+
+
+/* ---FOOTER--- */
+
+
+
+
+footer {
+    background-color: #f2f2f2;
+    margin: 0 -15px;
+}
+
+.footer {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin: auto;
+    max-width: 1100px;    
+}
+
+.colonnes {
+    display: flex;
+    flex-direction: column;
+    margin: 45px 0 30px 0 ;
+    max-width: 1100px;
+}
+
+.titrefooter {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.li123 {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ----------------RESPONSIVE---------------- */
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 992px) {
+    .filtre{
+        flex-wrap: wrap;
+    }
+
+    .section {
+        flex-direction: column-reverse;
+    }
+
+    .lespopulaires {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .vignette{
+        width: 245px;   
+    }
+
+    .vignette2 { 
+        margin: 0 0 30px 0;
+    }
+
+    #articlehebergement {
+        margin: 20px 0 20px 0;
+    }
+
+    #Activite{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .double {
+        order: 1;
+    }
+
+    .simple{
+        width: 40vw;
+        }
+}
+
+
+
+
+@media all and (max-width: 900px) {
+    .lespopulaires {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vignette2 {
+        width: 90vw;
+        margin-bottom: 20px;
+    }
+
+    .li123 {
+        font-size: 13px;
+    }
+}
+
+
+
+
+@media all and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .nav_top_bar {
+        display: flex;
+        padding: 0;
+        margin: 20px 0 20px 0 ;
+        width: 50vw;
+        justify-content: center;
+    }
+
+    .nav_top_bar:hover {
+        border-top: 3px solid white;
+        color: #0065fc;
+        border-bottom: 3px solid #0065fc;
+        color: #0065fc;
+    }
+
+    #les_pop {
+        border-radius: 0px;
+        margin: -15px;
+    }
+
+     #articlehebergement {
+        background-color: transparent;
+     }
+
+    .vignette{
+        box-shadow: 5px 10px 5px  #f2f2f2;
+        width: 90vw;
+        height: 230px;
+        flex-direction: column;  
+        margin-bottom: 20px;
+    }
+
+    #afficherplus {
+        margin-left: 0px;
+    }
+
+    .taillephoto {
+        height: 100%;
+    }
+
+    .simple{
+        width: 90vw;
+        }
+
+    .photoactivite{
+        height: 180px;    
+    }
+    
+    .photoactivite2{
+        height: 180px ;
+    }
+
+    .footer {
+        margin: 0 -15px;
+        flex-direction: column;
+    }
+
+    .colonnes {
+        margin: 45px 0 0 40px ;
+    }
+
+    .li123 {
+        font-size: 18px;
+    }
+
+    #filtres {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navfiltre {
+        margin-bottom: 20px;
+    }
+
+    #Barre_recherche {
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid #f2f2f2;
+        border-radius: 15px;
+        width: auto;
+        height: 50px;
+        align-items: center;
+        overflow: hidden;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .recherche {
+        display: none;
+    }
+
+    .rechercheiphone {
+        all:unset;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 80px;
+        height: 100%;
+        background-color: #0065fc;
+        font-size: 20px;
+        font-weight: 800;
+        color: white;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .titrefooter {
+        font-size: 18px;
+    }
+
+    .li123 {
+        font-size: 14px;
+    }
+}
