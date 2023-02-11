@@ -81,7 +81,7 @@ h1 {
 }
 
 .button:hover {
-    background-color: #f2f2f2;
+    background-color: #deebff;
 }
 
 #Barre_recherche {
@@ -164,7 +164,6 @@ input {
   display: flex;
   align-items: center;
   border: 2px solid #f2f2f2;
-  border-left: transparent;
   border-radius: 30px;
   height: 50px;
   margin-right: 20px;
@@ -184,7 +183,8 @@ input {
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    background-color: #deebff;
+    font-size: 20px;
+    background-color: transparent;
     color: #0065fc;
     height: 50px;
     width: 50px; 
@@ -373,6 +373,10 @@ h3 {
     font-size: 24px;
 }
 
+.fa-chart-line {
+    color:#0065fc;
+    font-size: 18px;
+}
 
 
 
@@ -485,7 +489,7 @@ footer {
     }
 
     .section {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .lespopulaires {
@@ -552,6 +556,10 @@ footer {
         margin: 20px 0 20px 0 ;
         width: 50vw;
         justify-content: center;
+    }
+
+    .section {
+        flex-direction: column-reverse;
     }
 
     .nav_top_bar:hover {
