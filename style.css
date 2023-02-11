@@ -46,7 +46,7 @@ header {
 }
 
 #logo_principal {
-    height: 45px;
+    height: 19px;
 }
 
 .nav {
@@ -535,6 +535,10 @@ footer {
     .vignette2 {
         width: 90vw;
         margin-bottom: 20px;
+    }
+
+    #logo_principal {
+        margin-top: 30px;
     }
 
     .li123 {
